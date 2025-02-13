@@ -1,0 +1,227 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    padding: 30px 5%;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 3%; /* Moves it further left */
+}
+
+.club-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    position: absolute;
+    top: 60px;
+    left: 12%;
+}
+
+/* Container - Left Alignment */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align all content to the left */
+    width: 80%;
+    margin: 30px 5%;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width in container */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Table Header (Day & Activities) */
+th {
+    background: linear-gradient(45deg, #df4881, #c430d7);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Table Data Cells */
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Aligning the AI Video section to the left */
+.left-content {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.left-content h2 {
+    margin-bottom: 10px;
+}
+
+/* Numbered List */
+.left-content ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Note Section */
+.left-content p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .feature-img {
+        width: 80%; /* Adjust image size */
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .lets_btn {
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        width: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .club-name {
+        font-size: 18px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .lets_btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 15px 3%;
+    }
+
+    .logo {
+        width: 80px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .club-name {
+        font-size: 16px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .lets_btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .feature-img {
+        width: 70%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+}

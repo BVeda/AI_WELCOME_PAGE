@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME AI WEEK</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <div class="hero">
+        <!-- Navbar -->
+        <nav>
+            <img src="Coding_Ninjas_Logo_Cropped.png" class="logo">
+            <span class="club-name">10X Club</span>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="container">
+            <!-- Left Side Content -->
+            <div class="content">
+                <h1 class="anime">Welcome to AI WEEK</h1>
+                <p class="anime">Brought to you by 10X CODING NINJAS - GESRHSCOE</p>
+                <a href="schedule.html" class="lets_btn anime">LET'S START</a>
+            </div>
+            
+            <!-- Right Side Image -->
+             
+            <img src="ninja-removebg-preview.png" alt="Cute Ninja" class="feature-img anime">
+        </div>
+    </div>
+
+    <!-- JavaScript for animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let elements = document.querySelectorAll(".anime");
+
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add("show");
+                }, index * 300);
+            });
+        });
+    </script>
+
+</body>
+</html>
